@@ -41,6 +41,7 @@ const navStyle = {
   display: 'inline-block',
   marginRight: '3em',
   paddingBottom: '1em',
+  outline: 0,
 }
 
 const Sidebar = () => (
