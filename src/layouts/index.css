@@ -1,6 +1,26 @@
 
 body {
- 
   background-color: 353535;
+  text-align: center;
+}
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+.button {
+  display: inline-block;
+  background: #4f4f4f;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: .5em 0;
 }

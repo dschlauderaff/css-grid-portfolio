@@ -6,32 +6,12 @@ import Helmet from 'react-helmet'
 import './index.css'
 
 const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
+  <header id="showcase" className="grid">
+    <div className="bg-image"></div>
+    <h1>Welcome to My Site tchange this</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure similique possimus quos maxime perspiciatis cupiditate itaque veniam nulla unde non, molestiae reprehenderit, fuga commodi obcaecati, nobis magnam tempora distinctio qui.</p>
+    <Link to="/" className="button">Read More</Link>
+  </header>
 )
 
 const navStyle = {
@@ -45,9 +25,9 @@ const navStyle = {
 }
 
 const Sidebar = () => (
-  <div style={{
-    gridColumn: '1 ',
-    gridRow: '1 / span 8',
+  <sidebar className={"sidebar"} style={{
+    //gridColumn: '1 ',
+    //gridRow: '1 / span 8',
 
     padding: '3em',
     background: '#4f4f4f',
@@ -65,7 +45,19 @@ const Sidebar = () => (
       <Link style={navStyle} activeStyle={{color: '#c4c4c4'}} to="/about/">About</Link>
       <Link style={navStyle} activeStyle={{color: '#c4c4c4'}} to="/contact/">Contact</Link> 
     </nav>  
-  </div>
+  </sidebar>
+)
+
+const Footer = () => (
+  <footer id="main-footer" className="grid">
+  // It would be cool to have a link back to the top of the screen here
+    <div className="icon">
+      <Link to="/https://www.linkedin.com/in/davidschlaueraff">linkedin icon</Link>
+      <Link to="/https://www.github.com/dschlauderaff">Github icon</Link>
+      <Link to="/https://www.twitter.com/dschlauderaff">Twitter icon</Link>
+    </div>
+    <div className="footnote">DAVID SCHLAUDERAFF ©2018</div>
+  </footer>
 )
 
 const TemplateWrapper = ({ children }) => (
@@ -74,31 +66,25 @@ const TemplateWrapper = ({ children }) => (
     color: '#c4c4c4',
     fontSize: '1.2rem',
     lineHeight: '1.45',
-    display: 'grid',
-    gridTemplateColumns: '400px repeat(4, 1fr)',
-    gridTemplateRows: 'repeat(5, 1fr)',
+    //display: 'grid',
+    //gridTemplateColumns: '400px repeat(4, 1fr)',
+    //gridTemplateRows: 'repeat(5, 1fr)',
     
 
   }}>
     <Helmet
-      title="Gatsby Default Starter"
+      title="The Way Broadly"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
     {/* <Header /> */}
-    <Sidebar />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+    {/* <Sidebar /> */}
+    <div>
       {children()}
     </div>
+    <Footer />
   </div>
 )
 
