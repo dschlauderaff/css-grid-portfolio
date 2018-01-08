@@ -56,13 +56,16 @@ const Footer = () => (
       <Link to="/https://www.github.com/dschlauderaff">Github icon</Link>
       <Link to="/https://www.twitter.com/dschlauderaff">Twitter icon</Link>
     </div>
-    <div className="footnote">DAVID SCHLAUDERAFF ©2018</div>
+    <div className="footnote">DAVID SCHLAUDERAFF 
+      <span className="highlight">©2018</span>
+    </div>
+
   </footer>
 )
 
 const TemplateWrapper = ({ children }) => (
   <div style={{
-    background: "#353535",
+    //background: "#353535",
     color: '#c4c4c4',
     fontSize: '1.2rem',
     lineHeight: '1.45',

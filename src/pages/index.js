@@ -7,11 +7,15 @@ const IndexPage = () => (
   <div>
     <header id="showcase" className="grid">
       <div className="bg-image"></div>
-      <h1>Something something</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure similique possimus quos maxime perspiciatis cupiditate itaque veniam nulla unde non, molestiae reprehenderit, fuga commodi obcaecati, nobis magnam tempora distinctio qui.</p>
-      <Link to="/" className="button">Read More</Link>
+      <div className="content-wrap">
+        <h1>Something something</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure similique possimus quos maxime perspiciatis cupiditate itaque veniam nulla unde non, molestiae reprehenderit, fuga commodi obcaecati, nobis magnam tempora distinctio qui.</p>
+        <Link to="/" className="button">Read More</Link>
+      </div>
     </header>
     <main id="main">
+
+
       {/* Section A About*/}
       <section id="section-a" className="grid">
         <div className="content-wrap">
@@ -22,6 +26,7 @@ const IndexPage = () => (
 
       {/* Section B - Blog */}
       <section id="section-b" className="grid">
+        <div className="bg-image"></div>
         <div className="content-wrap">
           <h2 className="content-title">Technical Blog</h2>
           <p>This section will be a link to the technical blog</p>

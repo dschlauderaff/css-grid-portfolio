@@ -6,8 +6,11 @@
   "dependencies": {
     "gatsby": "^1.9.149",
     "gatsby-link": "^1.6.32",
+    "gatsby-plugin-postcss-sass": "^1.0.15",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-typography": "^1.7.10",
+    "postcss": "^6.0.16",
+    "postcss-nested": "^3.0.0",
     "typography-theme-github": "^0.15.10"
   },
   "keywords": [
