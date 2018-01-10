@@ -7,16 +7,18 @@ import FaEnvelope from 'react-icons/lib/fa/envelope'
 
 
 const IndexPage = () => (
-  
   <main id="main">
     <div id="showcase" className="grid">
-      <div className="bg-image"></div>
       <div className="content-wrap">
-        <h2>Hi, my name is David. I am a Full Stack Web Developer living in Fort Worth, TX.</h2>
-        <a href="#section-c" className="button">Read More</a>
+        <h2>
+          Hi, my name is David. I am a Full Stack Web Developer living in Fort
+          Worth, TX.
+        </h2>
+        <a href="#section-c" className="button">
+          Read More
+        </a>
       </div>
     </div>
-
 
     {/* Section A - Projects */}
     <section id="section-a" className="grid">
@@ -29,13 +31,13 @@ const IndexPage = () => (
           link="#"
         />
         <Card
-          image="won't work anyway"
+          image={gears}
           title="test numero dos"
           description="i'll need to figure out how to iterate an array of these"
           link="#"
         />
         <Card
-          image="won't work anyway"
+          image={gears}
           title="test numero tres"
           description="i'll need to figure out how to iterate an array of these"
           link="#"
@@ -45,12 +47,17 @@ const IndexPage = () => (
 
     {/* Section B - Blog */}
     <section id="section-b" className="grid">
-      <div className="bg-image"></div>
+      <div className="bg-image" />
       <div className="content-wrap">
         <h2 className="content-title">Technical Blog</h2>
         <p>This section will be a link to the technical blog</p>
         <p>Perhaps an excerpt of the latest post?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus eligendi eaque ducimus, quisquam fuga animi placeat nesciunt ea voluptatum, aliquam eveniet. Voluptates harum consectetur reprehenderit.</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+          eligendi eaque ducimus, quisquam fuga animi placeat nesciunt ea
+          voluptatum, aliquam eveniet. Voluptates harum consectetur
+          reprehenderit.
+        </p>
       </div>
     </section>
 
@@ -59,8 +66,17 @@ const IndexPage = () => (
       <div className="content-wrap">
         <h2 className="content-title">About Me</h2>
         <div className="content-text">
-          <p>I'm a full-stack web developer using using Ruby on Rails, JavaScript, and ReactJS. I studied web development at <a href="https://flatironschool.com/">Flatiron School</a> through the Online Immersive Bootcamp.</p>
-          <p>I enjoy creation. One of my favorite aspects of web development is having a product at the end of a project and say "I built that". You can check out <Link to="/portfolio/">some of them here.</Link></p>
+          <p>
+            I'm a full-stack web developer using using Ruby on Rails,
+            JavaScript, and ReactJS. I studied web development at{" "}
+            <a href="https://flatironschool.com/">Flatiron School</a> through
+            the Online Immersive Bootcamp.
+          </p>
+          <p>
+            I enjoy creation. One of my favorite aspects of web development is
+            having a product at the end of a project and say "I built that". You
+            can check out <Link to="/portfolio/">some of them here.</Link>
+          </p>
         </div>
       </div>
     </section>
@@ -82,10 +98,12 @@ const IndexPage = () => (
       </div>
       <div className="box">
         <h2 className="content-title">Contact</h2>
-        
-        <a href="mailto:dschlaud@gmail.com" target="_top"><FaEnvelope /> dschlaud@gmail.com</a>      </div>
+        <a href="mailto:dschlaud@gmail.com" target="_top">
+          <FaEnvelope /> dschlaud@gmail.com
+        </a>{" "}
+      </div>
     </section>
   </main>
-)
+);
 
 export default IndexPage

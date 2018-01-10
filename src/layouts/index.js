@@ -14,7 +14,9 @@ import './index.css'
 const Sidebar = () => (
   <sidebar id="sidebar">
     <div className="content-wrap">
-      <div style={{
+      <div 
+      className="logo"
+      style={{
         textTransform: 'uppercase',
         marginBottom: '1em',
       }}>
@@ -41,7 +43,7 @@ const Footer = () => (
       <a href="https://www.github.com/dschlauderaff" target="_blank"><FaGithub size={35} color='orange'/></a>
       <a href="https://www.twitter.com/dschlauderaff" target="_blank"><FaTwitter size={35} color='orange' /></a>
     </div>
-    <div className="footnote">DAVID SCHLAUDERAFF 
+    <div className="footnote icon">DAVID SCHLAUDERAFF 
       <span className="highlight">©2018</span>
     </div>
 
@@ -49,15 +51,7 @@ const Footer = () => (
 )
 
 const TemplateWrapper = ({ children }) => (
-  <div style={{
-    
-    color: '#c4c4c4',
-    fontSize: '1.2rem',
-    lineHeight: '1.45',
-    
-    
-
-  }}>
+  <div> 
     <Helmet
       title="The Way Broadly"
       meta={[
@@ -65,12 +59,12 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <div className="main-grid">
-      <Sidebar />
-      <div style={{marginTop: '50px'}}>
-        {children()}
-      </div>
-      <Footer />
+    <div id="main-grid">
+      <Sidebar id="sidebar" />
+      
+      {children()}
+    
+      <Footer id='footer'/>
     </div>
   </div>
 )

@@ -12,8 +12,11 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-typography": "^1.7.10",
     "postcss": "^6.0.16",
+    "postcss-cssnext": "2.11.0",
     "postcss-nested": "^3.0.0",
+    "postcss-nesting": "^4.2.1",
     "react-icons": "^2.2.7",
+    "rucksack-css": "^1.0.2",
     "typography-theme-github": "^0.15.10"
   },
   "keywords": [
