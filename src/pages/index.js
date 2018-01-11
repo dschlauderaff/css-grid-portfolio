@@ -47,7 +47,6 @@ const IndexPage = () => (
 
     {/* Section B - Blog */}
     <section id="section-b" className="grid">
-      <div className="bg-image" />
       <div className="content-wrap">
         <h2 className="content-title">Technical Blog</h2>
         <p>This section will be a link to the technical blog</p>
@@ -74,7 +73,7 @@ const IndexPage = () => (
           </p>
           <p>
             I enjoy creation. One of my favorite aspects of web development is
-            having a product at the end of a project and say "I built that". You
+            having a product at the end of a project and be able to say "I built that". You
             can check out <Link to="/portfolio/">some of them here.</Link>
           </p>
         </div>
@@ -88,18 +87,26 @@ const IndexPage = () => (
         <ul className="tools">
           <li>Ruby on Rails</li>
           <li>Sinatra</li>
+          <li>RSpec</li>
+          <li>Mocha</li>
+          <li>PostgreSQL</li>
           <li>jQuery</li>
-          <li>ReactJS</li>
+          <li>React</li>
+          <li>Redux</li>
           <li>GatsbyJS</li>
           <li>Heroku</li>
           <li>Git</li>
           <li>CSS</li>
+          <li>Webpack</li>
+          <li>Yarn</li>
+          <li>npm</li>
+          <li>PostCSS</li>
         </ul>
       </div>
       <div className="box">
         <h2 className="content-title">Contact</h2>
         <a href="mailto:dschlaud@gmail.com" target="_top">
-          <FaEnvelope /> dschlaud@gmail.com
+            <FaEnvelope size={25}/> dschlaud@gmail.com
         </a>{" "}
       </div>
     </section>

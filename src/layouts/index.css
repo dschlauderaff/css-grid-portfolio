@@ -52,11 +52,13 @@ img {
   padding: .5em 1em;
   border: 1px solid black;
   margin: .5em 0;
+  transition: all .5s;
 }
 
   .button:hover {
     background:white;
     color: var(--accent);
+    transition: all .5s;
   }
 
 
@@ -106,21 +108,6 @@ img {
 
 
 /* Projects */
-@mixin dark-overlay{
-  &:after{
-    content: "";
-    width: 50%;
-    height: auto;
-    position: absolute;
-    z-index: -1;  
-    top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-  }
-}
-
-
 
 .image {
     position:relative;
@@ -139,47 +126,100 @@ img {
     background:rgba(0,0,0,0.6);
     opacity:0.3;
     transition: all 0.5s;
-    -webkit-transition: all 0.5s;
 }
 .image:hover:after {
     opacity:1;
 }
 
-  #section-a {
-    padding: 2em 1em 1em;
-  }
+#section-a {
+  padding: 2em 1em 1em;
+}
 
-  #section-a ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+#section-a ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  #section-a li {
-    margin-bottom: 1em;
-    background: var(--menu-background);
-    color: #353535;
-  }
+#section-a li {
+  flex: 1 1 15em;
+  margin: .5em;
+  background: var(--menu-background);
+  color: #353535;
+}
 
-  .card-content {
-    padding: 1.5em;
-    color: whitesmoke;
-  }
+.card-content {
+  padding: 1.5em;
+  color: whitesmoke;
+}
+
+.card-content h3 {
+  color: orange;
+}
   
-  .card-content h3 {
-    color: orange;
-  }
-  
-/* .card .card-content {
+/* BLOG */
+
+#section-b {
+  min-height: 30em;
+  color: whitesmoke;
+  text-align: center;
+  position: relative; 
+  z-index: 1;
+
+  text-align: center;
+  padding:1.5em;
+  background:url("../img/blog.jpg") no-repeat;
+  background-size: cover;
+}
+
+#section-b:after {
+  content: "";
+  width: auto;
+  height: auto;
   position: absolute;
+  z-index: -1; 
+  top: 0;
+  right: 0;
+  left: 0;
   bottom: 0;
-  color: var(--light-gray);
-  width: 100%;
-  padding: 2em;
+  background: rgba(0,0,0,0.4);
+}
 
-} */
+/* SECTION D TOOLS */
+#section-c,
+#section-d {
+  text-align: center;
+}
+
+#section-c a,
+#section-d a {
+  color: orange;
+}
+
+#section-c .content-text {
+  column-count: 2;
+  text-align: left;
+}
+
+#section-d {
+  background: var(--menu-background);
+  padding-bottom: 1em;
+}
+
+#section-d ul {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+  column-count:  2;
+  text-align: left;
+}
 
 
+
+/* FOOTER */
 
 #main-footer {
     display: grid;
