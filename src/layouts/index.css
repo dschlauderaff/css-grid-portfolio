@@ -73,7 +73,7 @@ img {
 }
 
 #sidebar .nav {
-  color: var(--menu-font-color);
+  color: #c0c0c0;
   display: inline-block;
   margin-right: 1em;
   padding-bottom: 1em;
@@ -131,10 +131,6 @@ img {
     opacity:0.3;
 }
 
-#section-a {
-  padding: 2em 1em 1em;
-}
-
 #section-a ul {
   display: flex;
   justify-content: space-evenly;
@@ -146,9 +142,9 @@ img {
 
 #section-a li {
   flex: 1 1 15em;
-  margin: .5em;
   background: var(--menu-background);
   color: #353535;
+  margin: 0;
 }
 
 .card-content {
@@ -274,6 +270,12 @@ img {
 
   #section-a {
     grid-area: project;
+    padding: 1em 1em 1em;
+  }
+
+  #section-a li {
+    margin: .5em;
+
   }
 
   #section-b {
@@ -304,6 +306,7 @@ img {
     max-width: 275px;
     grid-area: sidebar;
     padding-left: .5em;
+    min-height: 350px;
   }
 
   
@@ -325,13 +328,15 @@ img {
     display: grid;
     height: 100%;
 
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(10, 1fr) .7em;
+    grid-template-rows: 1em 1fr 1fr 1em 1fr;
     grid-gap: .7em;
     grid-template-areas: 
+      "x x x x x x x x x x  "
       "project project project project showcase showcase showcase showcase showcase showcase"
       "project project project project about about about about about about"
-      "contact contact contact blog blog blog blog blog blog blog  ";
+      "space space space space space space space space space space "
+      "blog blog blog blog blog blog blog blog blog blog  ";
   }
 
 
@@ -342,21 +347,31 @@ img {
 
   #section-a {
     grid-area: project;
+    display: flex;
   }
 
+  #section-a ul {
+    display: grid;
+    grid-gap: .5em;
+    /* background: red; */
+    margin-left: .75em;
+
+  }
   #section-b {
     grid-area: blog;
+    margin-left: 1.25em;
   }
 
   #section-c {
-    grid-area: about;
+    display: none;
   }
 
   #section-d {
-    grid-area: contact;
+    grid-area: about;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    /* margin: 0 1em; */
 
   }
 }

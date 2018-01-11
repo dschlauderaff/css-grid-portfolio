@@ -23,11 +23,11 @@ const Sidebar = () => (
         David<span style={{fontWeight: 700}}>Schlauderaff</span>
       </div>
       <nav className="logo">
-        <Link className="nav" exact activeStyle={{color: '#c4c4c4'}} to="/">Home</Link>
-        <Link className="nav" activeStyle={{color: '#c4c4c4'}} to="/blog/">Blog</Link>
-        <Link className="nav" activeStyle={{color: '#c4c4c4'}} to="/portfolio/">Portfolio</Link>
-        <Link className="nav" activeStyle={{color: '#c4c4c4'}} to="#section-c">About</Link>
-        <Link className="nav" activeStyle={{color: '#c4c4c4'}} to="#section-d">Contact</Link> 
+        <Link className="nav" exact activeStyle={{color: 'orange'}} to="/">Home</Link>
+        <Link className="nav" activeStyle={{color: 'orange'}} to="/blog/">Blog</Link>
+        <Link className="nav" activeStyle={{color: 'orange'}} to="/portfolio/">Portfolio</Link>
+        <Link className="nav" activeStyle={{color: 'orange'}} to="#section-c">About</Link>
+        <Link className="nav" activeStyle={{color: 'orange'}} to="#section-d">Contact</Link> 
       </nav>  
     </div>
   </sidebar>
