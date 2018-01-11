@@ -69,12 +69,14 @@ const IndexPage = () => (
             I'm a full-stack web developer using using Ruby on Rails,
             JavaScript, and ReactJS. I studied web development at{" "}
             <a href="https://flatironschool.com/">Flatiron School</a> through
-            the Online Immersive Bootcamp.
+            their Online Immersive Bootcamp. Prior to this, I was a retail store manager for Barnes & Noble Education.
           </p>
           <p>
-            I enjoy creation. One of my favorite aspects of web development is
-            having a product at the end of a project and be able to say "I built that". You
-            can check out <Link to="/portfolio/">some of them here.</Link>
+            I enjoy building things. Woodworking is a hobby of mine, and one of my favorite aspects of web development is
+            having a product at the end of a project and being able to say "I built
+            that". You can check out some of them <Link to="/portfolio/">
+              here.
+            </Link>
           </p>
         </div>
       </div>
@@ -106,7 +108,7 @@ const IndexPage = () => (
       <div className="box">
         <h2 className="content-title">Contact</h2>
         <a href="mailto:dschlaud@gmail.com" target="_top">
-            <FaEnvelope size={25}/> dschlaud@gmail.com
+          <FaEnvelope size={25} /> dschlaud@gmail.com
         </a>{" "}
       </div>
     </section>

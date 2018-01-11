@@ -2,6 +2,7 @@ const nesting = require(`postcss-nesting`)
 const rucksack = require(`rucksack-css`)
 
 module.exports = {
+  pathPrefix: `/css-grid-portfolio`,
   siteMetadata: {
     title: `Gatsby Default Starter`
   },

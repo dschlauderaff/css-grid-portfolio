@@ -22,7 +22,7 @@ const Sidebar = () => (
       }}>
         David<span style={{fontWeight: 700}}>Schlauderaff</span>
       </div>
-      <nav>
+      <nav className="logo">
         <Link className="nav" exact activeStyle={{color: '#c4c4c4'}} to="/">Home</Link>
         <Link className="nav" activeStyle={{color: '#c4c4c4'}} to="/blog/">Blog</Link>
         <Link className="nav" activeStyle={{color: '#c4c4c4'}} to="/portfolio/">Portfolio</Link>
