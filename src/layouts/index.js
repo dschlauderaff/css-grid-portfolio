@@ -15,6 +15,7 @@ const Sidebar = () => (
   <sidebar id="sidebar">
     <div className="content-wrap">
       <div 
+      id="name-logo"
       className="logo"
       style={{
         textTransform: 'uppercase',

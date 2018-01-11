@@ -302,6 +302,10 @@ img {
       "footer footer";
   }
 
+  #name-logo{
+    margin-left: 8.7em;
+  }
+  
   #sidebar {
     max-width: 275px;
     grid-area: sidebar;
@@ -314,6 +318,8 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     position: fixed;
+    text-align: right;
+    padding-left: 5.75em;
   }
 
   #main-footer {
