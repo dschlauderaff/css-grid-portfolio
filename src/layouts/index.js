@@ -7,9 +7,9 @@ import FaGithub from 'react-icons/lib/fa/github-square'
 import FaTwitter from 'react-icons/lib/fa/twitter-square'
 import FaUp from 'react-icons/lib/fa/angle-double-up'
 
-
-
 import './index.css'
+
+
 
 const Sidebar = () => (
   <sidebar id="sidebar">
@@ -27,8 +27,8 @@ const Sidebar = () => (
         <Link className="nav" exact activeStyle={{color: 'orange'}} to="/">Home</Link>
         <Link className="nav" activeStyle={{color: 'orange'}} to="/blog/">Blog</Link>
         <Link className="nav" activeStyle={{color: 'orange'}} to="/portfolio/">Portfolio</Link>
-        <Link className="nav" activeStyle={{color: 'orange'}} to="#section-c">About</Link>
-        <Link className="nav" activeStyle={{color: 'orange'}} to="#section-d">Contact</Link> 
+        <Link className="nav" activeStyle={{color: 'orange'}} to="/about">About</Link>
+        <Link className="nav" activeStyle={{color: 'orange'}} to="/contact">Contact</Link> 
       </nav>  
     </div>
   </sidebar>
