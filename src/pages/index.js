@@ -69,14 +69,14 @@ const IndexPage = () => (
             I'm a full-stack web developer using using Ruby on Rails,
             JavaScript, and ReactJS. I studied web development at{" "}
             <a href="https://flatironschool.com/">Flatiron School</a> through
-            their Online Immersive Bootcamp. Prior to this, I was a retail store manager for Barnes & Noble Education.
+            their Online Immersive Bootcamp. Prior to this, I was a retail store
+            manager for Barnes & Noble Education.
           </p>
           <p>
-            I enjoy building things. Woodworking is a hobby of mine, and one of my favorite aspects of web development is
-            having a product at the end of a project and being able to say "I built
-            that". You can check out some of them <Link to="/portfolio/">
-              here.
-            </Link>
+            I enjoy building things. Woodworking is a hobby of mine, and one of
+            my favorite aspects of web development is having a product at the
+            end of a project and being able to say "I built that". You can check
+            out some of them <Link to="/portfolio/">here.</Link>
           </p>
         </div>
       </div>
@@ -111,6 +111,13 @@ const IndexPage = () => (
           <FaEnvelope size={25} /> dschlaud@gmail.com
         </a>{" "}
       </div>
+    </section>
+
+    {/* Section E Spacer Image */}
+    <section id="section-e">
+      <a href="" className="button">
+        ABOUT ME
+      </a>
     </section>
   </main>
 );

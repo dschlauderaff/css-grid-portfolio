@@ -86,7 +86,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30em;
+  height: auto;
   color: var(--gray);
 }
 
@@ -104,6 +104,7 @@ img {
 
 #showcase .content-wrap .button {
   align-self: center;
+  margin-right: 1em;
 }
 
 
@@ -289,6 +290,10 @@ img {
   #section-d {
     grid-area: contact
   }
+
+  #section-e {
+    display: none;
+  }
 }
 
 /* LARGE SCREEN */
@@ -335,20 +340,29 @@ img {
     height: 100%;
 
     grid-template-columns: repeat(10, 1fr) .7em;
-    grid-template-rows: 1em 1fr 1fr 1em 1fr;
+    grid-template-rows: 1em 1fr 1fr 1fr 1fr 1fr 1em 1fr 1fr;
     grid-gap: .7em;
     grid-template-areas: 
       "x x x x x x x x x x  "
       "project project project project showcase showcase showcase showcase showcase showcase"
+      "project project project project showcase showcase showcase showcase showcase showcase"
+      "project project project project image        image        image        image        image        image"
+      "project project project project about about about about about about"
       "project project project project about about about about about about"
       "space space space space space space space space space space "
+      "blog blog blog blog blog blog blog blog blog blog  "
       "blog blog blog blog blog blog blog blog blog blog  ";
+
   }
+
+
 
 
 
   #showcase {
     grid-area: showcase;
+    display: flex;
+    justify-content: center;
   }
 
   #section-a {
@@ -379,6 +393,31 @@ img {
     justify-content: space-around;
     /* margin: 0 1em; */
 
+  }
+
+  #section-e {
+    grid-area: image;
+    display: flex;
+    background: url("../img/coffee.jpg") no-repeat;
+    position: relative; 
+    z-index: 1;
+    padding:40px;
+    align-content: center;
+    justify-content: center;
+    background-size: cover;  
+  }
+
+  #section-e::after {
+		content: "";
+		/* width: 0%; */
+		height: auto;
+		position: absolute;
+		z-index: -1; 
+    top: 0;
+		right: 0;
+		left: 0;
+    bottom: 0;
+    background:rgba(204, 116, 15, 0.548);
   }
 }
 
