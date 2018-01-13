@@ -14,9 +14,9 @@ const IndexPage = () => (
           Hi, my name is David. I am a Full Stack Web Developer living in Fort
           Worth, TX.
         </h2>
-        <a href="#section-c" className="button">
-          Read More
-        </a>
+        <Link href="/portfolio/" className="button">
+          SEE MY WORK
+        </Link>
       </div>
     </div>
 
@@ -60,27 +60,15 @@ const IndexPage = () => (
       </div>
     </section>
 
-    {/* Section C About*/}
-    <section id="section-c" className="grid">
+    {/* Section C About - Moved to separate page*/}
+    {/* <section id="section-c" className="grid">
       <div className="content-wrap">
         <h2 className="content-title">About Me</h2>
         <div className="content-text">
-          <p>
-            I'm a full-stack web developer using using Ruby on Rails,
-            JavaScript, and ReactJS. I studied web development at{" "}
-            <a href="https://flatironschool.com/">Flatiron School</a> through
-            their Online Immersive Bootcamp. Prior to this, I was a retail store
-            manager for Barnes & Noble Education.
-          </p>
-          <p>
-            I enjoy building things. Woodworking is a hobby of mine, and one of
-            my favorite aspects of web development is having a product at the
-            end of a project and being able to say "I built that". You can check
-            out some of them <Link to="/portfolio/">here.</Link>
-          </p>
+          
         </div>
       </div>
-    </section>
+    </section> */}
 
     {/* Section D - Tools I use & Contact*/}
     <section id="section-d" className="grid">
