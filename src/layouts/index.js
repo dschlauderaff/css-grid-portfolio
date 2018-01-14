@@ -27,8 +27,8 @@ const Sidebar = () => (
         <Link className="nav" exact activeStyle={{color: 'orange'}} to="/">Home</Link>
         <Link className="nav" activeStyle={{color: 'orange'}} to="/blog/">Blog</Link>
         <Link className="nav" activeStyle={{color: 'orange'}} to="/portfolio/">Portfolio</Link>
-        <Link className="nav" activeStyle={{color: 'orange'}} to="/about">About</Link>
-        <Link className="nav" activeStyle={{color: 'orange'}} to="/about#contact">Contact</Link> 
+        <Link className="nav" exact activeStyle={{color: 'orange'}} to="/about">About</Link>
+        <Link className="nav" exact activeStyle={{color: 'orange'}} to="/about#contact">Contact</Link> 
       </nav>  
     </div>
   </sidebar>

@@ -8,6 +8,20 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/blog`,
+        name: "pages"
+      }
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [] // just in case those previously mentioned remark plugins sound cool :)
+      }
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -18,7 +32,7 @@ module.exports = {
       resolve: `gatsby-plugin-postcss-sass`,
       options: {
         postCssPlugins: [rucksack(), nesting()],
-        precision: 8,
+        precision: 8
       }
     }
   ]

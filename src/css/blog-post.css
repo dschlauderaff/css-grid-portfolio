@@ -1,0 +1,19 @@
+@media (min-width: 700px) {
+  .blog-post {
+    margin-left: 9em;
+    margin-right: 9em;
+    margin-top: 4em;
+  }
+}
+
+div .blog-post {
+  background:#4f4f4f;
+  border-radius: 15px;
+  padding-left: .5em;
+  padding-bottom: .25em;
+}
+
+h2 {
+  padding-top: .5em;
+  color: orange;
+}

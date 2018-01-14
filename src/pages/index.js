@@ -4,6 +4,7 @@ import Card from '../components/card'
 import gears from '../img/gears.jpg'
 import git from '../img/git.png'
 import FaEnvelope from 'react-icons/lib/fa/envelope'
+import latestBlog from '../components/latestBlog'
 
 
 const IndexPage = () => (
@@ -14,7 +15,7 @@ const IndexPage = () => (
           Hi, my name is David. I am a Full Stack Web Developer living in Fort
           Worth, TX.
         </h2>
-        <Link href="/portfolio/" className="button">
+        <Link to="/portfolio/" className="button">
           SEE MY WORK
         </Link>
       </div>
@@ -47,7 +48,8 @@ const IndexPage = () => (
 
     {/* Section B - Blog */}
     <section id="section-b" className="grid">
-      <div className="content-wrap">
+      <latestBlog />
+      {/* <div className="content-wrap">
         <h2 className="content-title">Technical Blog</h2>
         <p>This section will be a link to the technical blog</p>
         <p>Perhaps an excerpt of the latest post?</p>
@@ -57,7 +59,8 @@ const IndexPage = () => (
           voluptatum, aliquam eveniet. Voluptates harum consectetur
           reprehenderit.
         </p>
-      </div>
+      </div> */}
+      
     </section>
 
     {/* Section C About - Moved to separate page*/}
@@ -103,11 +106,14 @@ const IndexPage = () => (
 
     {/* Section E Spacer Image */}
     <section id="section-e">
-      <a href="" className="button">
+      <Link to="/about/" className="button">
         ABOUT ME
-      </a>
+      </Link>
     </section>
   </main>
 );
+
+
+
 
 export default IndexPage

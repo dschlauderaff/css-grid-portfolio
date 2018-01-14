@@ -202,7 +202,7 @@ img {
 }
 
 #section-d {
-  background: whitesmoke;
+  background: rgba(245, 245, 245, 0.897);
   color: var(--gray);
   padding-bottom: 1em;
 }
@@ -233,7 +233,6 @@ img {
   #main-footer .footnote {
     font-size: 10pt;
     color: #8f9aa7;
-    padding-top: 35px;
     opacity: .6;
 }
 
@@ -300,7 +299,7 @@ img {
 @media(mIN-width: 701px) {
   #main-grid {
     display: grid;
-    grid-template-rows: auto 15em; 
+    grid-template-rows: auto 8em; 
     grid-template-columns: 8em auto;
     grid-template-areas: 
       "sidebar main"
