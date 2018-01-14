@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import Link from 'gatsby-link';
 
 import '../css/blog-post.css'; // make it pretty!
 
@@ -16,6 +17,7 @@ export default function Template({
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
+        <Link to="/blog">Return to Index</Link>
       </div>
     </div>
   );

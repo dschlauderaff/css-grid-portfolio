@@ -172,6 +172,7 @@ img {
   background-size: cover;
 }
 
+
 #section-b:after {
   content: "";
   width: auto;
@@ -183,6 +184,18 @@ img {
   left: 0;
   bottom: 0;
   background: rgba(0,0,0,0.4);
+}
+
+#section-b .blog-posts {
+  margin: 1em;
+}
+
+#section-b .blog-post-preview {
+  background: none;
+  margin: 0;
+  padding: 0;
+  /* max-width: 25em; */
+  /* display: flex; */
 }
 
 /* SECTION D TOOLS */
@@ -380,6 +393,8 @@ img {
     grid-area: blog;
     margin-left: 1.25em;
   }
+
+  
 
   #section-c {
     display: none;

@@ -16,4 +16,5 @@ div .blog-post {
 h2 {
   padding-top: .5em;
   color: orange;
+  text-transform: capitalize;
 }

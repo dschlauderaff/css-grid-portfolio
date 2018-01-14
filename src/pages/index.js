@@ -7,113 +7,117 @@ import FaEnvelope from 'react-icons/lib/fa/envelope'
 import latestBlog from '../components/latestBlog'
 
 
-const IndexPage = () => (
-  <main id="main">
-    <div id="showcase" className="grid">
-      <div className="content-wrap">
-        <h2>
-          Hi, my name is David. I am a Full Stack Web Developer living in Fort
-          Worth, TX.
-        </h2>
-        <Link to="/portfolio/" className="button">
-          SEE MY WORK
-        </Link>
-      </div>
-    </div>
-
-    {/* Section A - Projects */}
-    <section id="section-a" className="grid">
-      <ul>
-        {/* Each card is a component  */}
-        <Card
-          image={gears}
-          title="test title card"
-          description="an amendment to be, yes an amendment to be"
-          link="#"
-        />
-        <Card
-          image={gears}
-          title="test numero dos"
-          description="i'll need to figure out how to iterate an array of these"
-          link="#"
-        />
-        <Card
-          image={gears}
-          title="test numero tres"
-          description="i'll need to figure out how to iterate an array of these"
-          link="#"
-        />
-      </ul>
-    </section>
-
-    {/* Section B - Blog */}
-    <section id="section-b" className="grid">
-      <latestBlog />
-      {/* <div className="content-wrap">
-        <h2 className="content-title">Technical Blog</h2>
-        <p>This section will be a link to the technical blog</p>
-        <p>Perhaps an excerpt of the latest post?</p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
-          eligendi eaque ducimus, quisquam fuga animi placeat nesciunt ea
-          voluptatum, aliquam eveniet. Voluptates harum consectetur
-          reprehenderit.
-        </p>
-      </div> */}
-      
-    </section>
-
-    {/* Section C About - Moved to separate page*/}
-    {/* <section id="section-c" className="grid">
-      <div className="content-wrap">
-        <h2 className="content-title">About Me</h2>
-        <div className="content-text">
-          
+// const IndexPage = () => (
+export default ({ data }) => {
+  // debugger
+  const { edges: posts } = data.allMarkdownRemark
+  return <main id="main">
+      <div id="showcase" className="grid">
+        <div className="content-wrap">
+          <h2>
+            Hi, my name is David. I am a Full Stack Web Developer living in
+            Fort Worth, TX.
+          </h2>
+          <Link to="/portfolio/" className="button">
+            SEE MY WORK
+          </Link>
         </div>
       </div>
-    </section> */}
 
-    {/* Section D - Tools I use & Contact*/}
-    <section id="section-d" className="grid">
-      <div className="box">
-        <h2 className="content-title">Tools and Frameworks</h2>
-        <ul className="tools">
-          <li>Ruby on Rails</li>
-          <li>Sinatra</li>
-          <li>RSpec</li>
-          <li>Mocha</li>
-          <li>PostgreSQL</li>
-          <li>jQuery</li>
-          <li>React</li>
-          <li>Redux</li>
-          <li>GatsbyJS</li>
-          <li>Heroku</li>
-          <li>Git</li>
-          <li>CSS</li>
-          <li>Webpack</li>
-          <li>Yarn</li>
-          <li>npm</li>
-          <li>PostCSS</li>
+      {/* Section A - Projects */}
+      <section id="section-a" className="grid">
+        <ul>
+          {/* Each card is a component  */}
+          <Card image={gears} title="test title card" description="an amendment to be, yes an amendment to be" link="#" />
+          <Card image={gears} title="test numero dos" description="i'll need to figure out how to iterate an array of these" link="#" />
+          <Card image={gears} title="test numero tres" description="i'll need to figure out how to iterate an array of these" link="#" />
         </ul>
-      </div>
-      <div className="box">
-        <h2 className="content-title">Contact</h2>
-        <a href="mailto:dschlaud@gmail.com" target="_top">
-          <FaEnvelope size={25} /> dschlaud@gmail.com
-        </a>{" "}
-      </div>
-    </section>
+      </section>
 
-    {/* Section E Spacer Image */}
-    <section id="section-e">
-      <Link to="/about/" className="button">
-        ABOUT ME
-      </Link>
-    </section>
-  </main>
-);
+      {/* Section B - Blog */}
+      <section id="section-b" className="grid">
+        <h2 className="content-title">Latest Blog Entries</h2>
+        <div className="blog-posts">
+          {posts
+            .filter(post => post.node.frontmatter.title.length > 0)
+            .map(({ node: post }) => {
+              return (
+                <div className="blog-post-preview" key={post.id}>
+                  <h2>
+                    <Link to={post.frontmatter.path}>
+                      {post.frontmatter.title}
+                    </Link>
+                  </h2>
+                  <small>{post.frontmatter.date}</small>
+                  <p>{post.excerpt} <Link to={post.frontmatter.path}>read more</Link></p>
+                </div>
+              );
+            })}
+        </div>
+      </section>
+
+      {/* Section C About - Moved to separate page*/}
+
+      {/* Section D - Tools I use & Contact*/}
+      <section id="section-d" className="grid">
+        <div className="box">
+          <h2 className="content-title">Tools and Frameworks</h2>
+          <ul className="tools">
+            <li>Ruby on Rails</li>
+            <li>Sinatra</li>
+            <li>RSpec</li>
+            <li>Mocha</li>
+            <li>PostgreSQL</li>
+            <li>jQuery</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>GatsbyJS</li>
+            <li>Heroku</li>
+            <li>Git</li>
+            <li>CSS</li>
+            <li>Webpack</li>
+            <li>Yarn</li>
+            <li>npm</li>
+            <li>PostCSS</li>
+          </ul>
+        </div>
+        <div className="box">
+          <h2 className="content-title">Contact</h2>
+          <a href="mailto:dschlaud@gmail.com" target="_top">
+            <FaEnvelope size={25} /> dschlaud@gmail.com
+          </a>{" "}
+        </div>
+      </section>
+
+      {/* Section E Spacer Image */}
+      <section id="section-e">
+        <Link to="/about/" className="button">
+          ABOUT ME
+        </Link>
+      </section>
+    </main>;
+}
+// );
+
+export const pageQuery = graphql`
+  query BlogQuery {
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date] }, limit: 2) {
+      edges {
+        node {
+          excerpt(pruneLength: 500)
+          id
+          frontmatter { 
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+          }
+        }
+      }
+    } 
+  }
+`
 
 
 
 
-export default IndexPage
+// export default IndexPage
