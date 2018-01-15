@@ -53,5 +53,8 @@ div .blog-post-preview {
     margin-left: 9em;
     margin-right: 9em;
     margin-top: 4em;
+    width: auto;
+    max-width: 75em;
+
   }
 }
