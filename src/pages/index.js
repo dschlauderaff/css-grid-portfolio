@@ -4,7 +4,6 @@ import Card from '../components/card'
 import gears from '../img/gears.jpg'
 import git from '../img/git.png'
 import FaEnvelope from 'react-icons/lib/fa/envelope'
-import latestBlog from '../components/latestBlog'
 
 
 // const IndexPage = () => (
