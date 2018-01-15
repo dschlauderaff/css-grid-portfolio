@@ -1,5 +1,5 @@
 ---
-path: "blog/setting-up-a-local-ide-using-bash-on-windows"
+path: "/setting-up-a-local-ide-using-bash-on-windows"
 layout: post
 title:  "Setting up a local IDE using Bash on Windows"
 date:   "2017-08-05"

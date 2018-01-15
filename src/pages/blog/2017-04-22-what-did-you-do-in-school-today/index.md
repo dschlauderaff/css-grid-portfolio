@@ -1,5 +1,5 @@
 ---
-path: "/blog/what-did-you-do-in-school-today"
+path: "/what-did-you-do-in-school-today"
 layout: post
 title:  "What did you do in school today?"
 date:   "2017-04-22"

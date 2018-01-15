@@ -1,5 +1,5 @@
 ---
-path: "/blog/metacritic-games-cli-project"
+path: "/metacritic-games-cli-project"
 layout: post
 title:  Metacritic Games CLI project
 date:   "2017-05-19"

@@ -1,5 +1,5 @@
 ---
-path: "/blog/why-am-i-learning-to-code"
+path: "/why-am-i-learning-to-code"
 layout: post
 title:  "Why Am I Learning To Code?"
 date:   "2017-04-17"

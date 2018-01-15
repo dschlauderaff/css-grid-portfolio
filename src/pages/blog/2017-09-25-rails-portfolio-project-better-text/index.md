@@ -1,5 +1,5 @@
 ---
-path: "/blog/rails-portfolio-project-better-text"
+path: "/rails-portfolio-project-better-text"
 layout: post
 title:  "Rails portfolio project: Better-text"
 date:   "2017-09-26"

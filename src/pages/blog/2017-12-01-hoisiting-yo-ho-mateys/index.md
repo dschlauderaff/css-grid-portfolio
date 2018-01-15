@@ -1,5 +1,5 @@
 ---
-path: "blog/hoisting-yo-ho-mateys"
+path: "/hoisting-yo-ho-mateys"
 layout: post
 title:      "Hoisting (yo-ho mateys)"
 date:       "2017-12-01"

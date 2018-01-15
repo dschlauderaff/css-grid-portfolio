@@ -1,5 +1,5 @@
 ---
-path: "/blog/jquery-rails-frontend-better-text-app"
+path: "/jquery-rails-frontend-better-text-app"
 layout: post
 title:      "Jquery rails frontend - Better-Text app"
 date:       "2017-11-19"

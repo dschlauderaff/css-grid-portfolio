@@ -1,5 +1,5 @@
 ---
-path: "blog/sinatra-toy-project-tracker"
+path: "/sinatra-toy-project-tracker"
 layout: post
 title:  "Sinatra Project Toy Tracker"
 date:   "2017-06-28"

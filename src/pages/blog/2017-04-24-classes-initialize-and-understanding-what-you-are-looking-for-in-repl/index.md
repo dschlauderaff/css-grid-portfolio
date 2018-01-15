@@ -1,5 +1,5 @@
 ---
-path: "/blog/classes-initialize-and-undestanding-what-you-are-looking-for-in-repl"
+path: "/classes-initialize-and-undestanding-what-you-are-looking-for-in-repl"
 layout: post
 title:  "Classes, #initialize, and understanding what you are looking for in REPL"
 date:   "2017-04-24"
