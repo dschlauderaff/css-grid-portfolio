@@ -326,7 +326,7 @@ img {
   #sidebar {
     max-width: 275px;
     grid-area: sidebar;
-    padding-left: .5em;
+    padding-left: .28em;
     min-height: 350px;
   }
 
@@ -351,8 +351,8 @@ img {
     display: grid;
     height: 100%;
     width: auto;
-    max-width: 75em;
-
+    max-width: 50em;
+    justify-self: center;
     grid-template-columns: repeat(10, 1fr) .7em;
     grid-template-rows: 1em 1fr 1fr 1fr 1fr 1fr 1em 1fr 1fr;
     grid-gap: .7em;
