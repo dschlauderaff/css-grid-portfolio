@@ -50,11 +50,8 @@ div .blog-post-preview {
 
 @media (min-width: 700px) {
   .blog-posts {
-    margin-left: 9em;
-    margin-right: 9em;
-    margin-top: 4em;
+    margin: 3em auto 0;
     width: auto;
-    max-width: 50em;
-
+    max-width: 1200px;
   }
 }

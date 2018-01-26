@@ -20,9 +20,7 @@ export default class ContactPage extends React.Component {
               </a> through their Online Immersive Bootcamp. More than just teaching the how and why of development, Flatiron's instructors have an infectious passion for the art of programming. "Love what you do", people say, so now I want to do what I am passionate about: learning and programming.
             </p>
             <p>
-              Before learning web development, I was a retail store manager for Barnes & Noble Education. I worked for the company for 14 years, and in that time I learned many valuable skills, including time-management, communication, and the ability to work and learn independently.
-            </p>
-            <p>
+              Before learning web development, I was a retail store manager for Barnes & Noble Education. I worked for the company for 14 years, and in that time I learned many valuable skills, including time-management, communication, and the ability to work and learn independently. <br />
               I enjoy building things. Woodworking is a hobby of mine, and one of my favorite aspects of web development is having a product at the end of a project and being able to say "I built that". I'm searching for a position with a company where I can continue to grow as a developer. You can check out some of my projects <Link to="/portfolio/">
                 here.
               </Link>

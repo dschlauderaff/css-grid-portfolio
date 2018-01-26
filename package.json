@@ -7,6 +7,7 @@
     "evil-icons": "^1.9.0",
     "fs": "0.0.1-security",
     "gatsby": "^1.9.149",
+    "gatsby-cli": "^1.1.31",
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-catch-links": "^1.0.14",
     "gatsby-plugin-postcss-sass": "^1.0.15",

@@ -1,12 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import "../css/portfolio.css"
+
 const SecondPage = () => (
-  <div>
-    <h1>Hi from the Portfolio page</h1>
-    <p>This area is under contstruction</p>
-    <Link to="/">Go back to the homepage</Link>
-  </div>
-)
+    <div className="portfolio">
+      <div className="portfolio-item medium">one</div>
+      <div className="portfolio-item large two">two</div>
+      <div className="portfolio-item medium">three</div>
+      <div className="portfolio-item small">four</div>
+      <div className="portfolio-item tall">five</div>
+      <div className="portfolio-item wide">six</div>
+      <div className="portfolio-item wide">six</div>
+      <div className="portfolio-item medium">one</div>
+    </div>
+);
 
 export default SecondPage
